@@ -23,7 +23,7 @@ function golf (vg: number, vd: number) {
     // Avance vers dépot
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, vg)
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vd)
-    basic.pause(3078)
+    basic.pause(3070)
     Kitronik_Move_Motor.stop()
     // Spin vers dépot
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vd)
@@ -32,7 +32,7 @@ function golf (vg: number, vd: number) {
     // apres virage depot
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, vg)
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vd)
-    basic.pause(500)
+    basic.pause(470)
     Kitronik_Move_Motor.stop()
     basic.pause(200)
 }
