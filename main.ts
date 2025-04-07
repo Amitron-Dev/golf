@@ -20,11 +20,11 @@ function golf (vg: number, vd: number) {
     basic.pause(2500)
     Kitronik_Move_Motor.stop()
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, vg)
-    basic.pause(500)
+    basic.pause(550)
     // Avance vers dépot
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, vg)
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vd)
-    basic.pause(4500)
+    basic.pause(4000)
     Kitronik_Move_Motor.stop()
     // Spin vers dépot
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vd)
