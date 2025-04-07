@@ -3,32 +3,32 @@ function golf (vg: number, vd: number) {
     // avance vers balle
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, vg)
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vd)
-    basic.pause(1100)
+    basic.pause(1600)
     Kitronik_Move_Motor.stop()
     basic.pause(200)
     // retour arrière après prise de balle
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Reverse, vg)
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Reverse, vd)
-    basic.pause(260)
+    basic.pause(500)
     Kitronik_Move_Motor.stop()
     // Spin vers mur gauche
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vg)
-    basic.pause(380)
+    basic.pause(450)
     // Tout droit vers mur gauche
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, vg)
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vd)
-    basic.pause(2000)
+    basic.pause(2500)
     Kitronik_Move_Motor.stop()
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, vg)
-    basic.pause(400)
+    basic.pause(500)
     // Avance vers dépot
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, vg)
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vd)
-    basic.pause(3200)
+    basic.pause(4500)
     Kitronik_Move_Motor.stop()
     // Spin vers dépot
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorRight, Kitronik_Move_Motor.MotorDirection.Forward, vd)
-    basic.pause(340)
+    basic.pause(400)
     Kitronik_Move_Motor.stop()
     // apres virage depot
     Kitronik_Move_Motor.motorOn(Kitronik_Move_Motor.Motors.MotorLeft, Kitronik_Move_Motor.MotorDirection.Forward, vg)
@@ -38,7 +38,7 @@ function golf (vg: number, vd: number) {
     basic.pause(200)
 }
 input.onButtonPressed(Button.A, function () {
-    golf(61, 60)
+    golf(46, 45)
 })
 basic.forever(function () {
     moveMotorZIP = Kitronik_Move_Motor.createMoveMotorZIPLED(2)
